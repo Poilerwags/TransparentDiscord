@@ -2,7 +2,7 @@
 
 ![Example](https://i.imgur.com/LVCC1Kp.jpg)
 
-The theme is far from perfect and I will likely continuously update it so pleae, 
+The theme is far from perfect and I will likely continuously update it so please, 
 if you have any questions or suggestions, feel free to contact me on Discord at Gies#2934.
 
 **install using powercord.** https://powercord.dev
