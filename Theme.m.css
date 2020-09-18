@@ -4,7 +4,6 @@
 @import url('https://poilerwags.github.io/Customa-Discord/Base/tooltip.m.css');
 @import url('https://poilerwags.github.io/Customa-Discord/Base/variables.m.css');
 @import url('https://poilerwags.github.io/Customa-Discord/Base/modules.m.css');
-@import url('https://poilerwags.github.io/Customa-Discord/Chat/customEditIcon.m.css');
 /*@import url('https://poilerwags.github.io/Customa-Discord/Sidebar/serverColumns.m.css');*/
 @import url('https://poilerwags.github.io/Customa-Discord/Sidebar/wrapperMember.m.css');
 @import url('https://poilerwags.github.io/Customa-Discord/Sidebar/coloredChannelIcons.m.css');
@@ -105,10 +104,6 @@
   --guildgap: 2;
   --aligndms: 0;
 
-  --INTModCustomEditIcon: "    \2022  Custom Edit Icon ~ Customa Devs (Chat \2192  customEditIcon.m.css)\A"!important;
-  --INTVarCustomEditIcon: "\A\A Custom Edit Icon - Module \A \2022  --ContentEditIcon \2192  Allowed Values: url(TO_ICON)"!important;
-  --ContentEditIcon: url("https://imgur.com/6PkGYYE.png");
-
   --hover-animation-speed: 0.35s;
   --seperator-color: var(--background-accent);
 
@@ -118,6 +113,11 @@
   --selected-bg: rgba(112, 135, 215, 0.1) !important;
   --hovered-bg: rgba(79,84,92,0.25) !important;
   --bg-rounding: 0px 10px 10px 0px !important;
+}
+
+/*M Makes Bot Tag Round*/
+.botTag-2WPJ74 {
+    border-radius: 20px !important;
 }
 
 /*Gets rid of Nitro buttons*/
@@ -130,7 +130,7 @@
 
 /*Custom Home Button*/
 .listItem-2P_4kh:nth-child(1) .listItemWrapper-3X98Pc .wrapper-25eVIn svg foreignObject .wrapper-1BJsBx .childWrapper-anI2G9 .homeIcon-tEMBK1 {
-  background: url('https://i.imgur.com/6PkGYYE.png'); /* image url */
+  background: var(--HomeIconImg); /* image url */
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
