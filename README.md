@@ -8,18 +8,36 @@ if you have any questions or suggestions, feel free to contact me on Discord at 
 **install using powercord.** https://powercord.dev
 ## Easy Install (recommended)
 1. go to ``Settings`` > ``Themes`` > ``Quick CSS tab``
-2. Paste this into the textarea on the first line
-```css 
-@import url("https://raw.githack.com/Poilerwags/TransparentDiscord/master/Theme.m.css"); 
+2. Paste this into the textarea on the first line and modify the url's to whatever you want: 
+```css
+@import url("https://raw.githack.com/Poilerwags/TransparentDiscord/master/Theme.m.css");
+
+:root{
+  
+  /* Custom Background Url [url("image")]*/
+  --ColAppBG: url('https://i.imgur.com/k6hST83.png');
+  
+  /* Custom Home Icon Url [url("image")]*/
+  --HomeIconImg: url("https://pbs.twimg.com/media/EYX1joIU4AAz3oX.jpg");
+}
 ```   
 3. enjoy
   
 ## Manual install
 1. make a plain css file. name it ``Theme.css``  
 2. put in ``powercord/src/themes/[Insert Theme Name]``
-3. put this into your css file:  
+3. put this into your css file and modify the url's to whatever you want:  
 ```css 
 @import url("https://raw.githack.com/Poilerwags/TransparentDiscord/master/Theme.m.css");
+
+:root{
+  
+  /* Custom Background Url [url("image")]*/
+  --ColAppBG: url('https://i.imgur.com/k6hST83.png');
+  
+  /* Custom Home Icon Url [url("image")]*/
+  --HomeIconImg: url("https://pbs.twimg.com/media/EYX1joIU4AAz3oX.jpg");
+}
 ```  
 
 ```diff
