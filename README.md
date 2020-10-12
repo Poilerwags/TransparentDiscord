@@ -33,15 +33,22 @@ if you have any questions or suggestions, feel free to contact me on Discord at 
 :root{
   
   /* Custom Background Url [url("image")]*/
-  --ColAppBG: url('https://i.imgur.com/k6hST83.png');
+  --BackgroundImg: url('https://i.imgur.com/k6hST83.png');
   
   /* Custom Home Icon Url [url("image")]*/
   --HomeIconImg: url("https://pbs.twimg.com/media/EYX1joIU4AAz3oX.jpg");
+  
+  /* To get color hex codes, type "colorpicker" in google.*/
+  
+  --UnreadColor: #FF4343; /* Red */
+  --HoverColor: #70ff48; /* Green */
+  --MainColor: #3a7bff; /* Dark Blue */
+  --SelectedColor: #16F3EE; /* Light Blue */
 }
 ```  
 
 ```diff
-if this doesent work copy the contents of the link into the css file. 
+if this doesn't work copy the contents of the link into the css file. 
 - You will lose auto updates by doing this! 
 ```
 4. download the ``powercord_manifest.json`` from this repo and put it in the same folder.  
