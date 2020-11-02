@@ -1,27 +1,18 @@
+@import url('https://poilerwags.github.io/Customa-Discord/css-snippets.m.css');
 @import url('https://poilerwags.github.io/Customa-Discord/Base/base.m.css');
 @import url('https://poilerwags.github.io/Customa-Discord/Base/color.m.css');
 @import url('https://poilerwags.github.io/Customa-Discord/Base/selection.m.css');
-@import url('https://poilerwags.github.io/Customa-Discord/Base/tooltip.m.css');
+@import url('https://poilerwags.github.io/Customa-Discord/Base/tooltips.m.css');
 @import url('https://poilerwags.github.io/Customa-Discord/Base/variables.m.css');
 @import url('https://poilerwags.github.io/Customa-Discord/Base/modules.m.css');
-/*@import url('https://poilerwags.github.io/Customa-Discord/Sidebar/serverColumns.m.css');*/
-@import url('https://poilerwags.github.io/Customa-Discord/Sidebar/wrapperMember.m.css');
+@import url('https://poilerwags.github.io/Customa-Discord/Chat/radialstatus.m.css');
+@import url('https://poilerwags.github.io/Customa-Discord/Sidebar/MemberWrapperHover.m.css');
 @import url('https://poilerwags.github.io/Customa-Discord/Sidebar/coloredChannelIcons.m.css');
-@import url("https://discord-custom-gradient-names.github.io/gradient/dist/main.min.css");
 @import url("https://raw.githack.com/LuckFire/CSS-Snippets/master/BetterChannelIndicators/indicators.css");
-@import url('https://gibbu.github.io/BetterDiscord-Themes/RadialStatus/base.css');
 
 :root{
   --INTModColor: '    \2022  Color ~ Customa Devs (Base \2192  color.m.css)\A'!important;
   --INTVarColor: '\A\A Color - Module \A \2022  --ColChat \2192  Allowed Values: Allowed Values: Color\A \2022  --ColFont \2192  Allowed Values: Allowed Values: Color\A \2022  --ColFontBright \2192  Allowed Values: Allowed Values: Color\A \2022  --ColFontPlaceholder \2192  Allowed Values: Allowed Values: Color'!important;
-  --ColChat: white;
-  --ColFont: white;
-  --ColFontBright: white;
-  --ColFontUnread: #FF4343; /* Red */
-  --ColFontHovered: #70ff48; /* Green */
-  --ColFontMain: #3a7bff; /* Dark Blue */
-  --ColFontSelected: #16F3EE; /* Light Blue */
-  --ColFontPlaceholder: green;
 
   /* Do not change anything here unless you know what you are doing */
   --INTModBase: "    \2022  Base ~ Customa Devs (Base \2192  base.m.css)\A"!important;
@@ -30,7 +21,7 @@
   --INTVarBase: "\A\A Base - Module"
     "\A \2022  --ColAccent \2192  Allowed Values: Color (pref. #d81b60)"
     "\A \2022  --ColAccentAlpha \2192  Allowed Values: Color (pref. rgba(216, 27, 96, .1))"
-    "\A \2022  --ColAppBG \2192  Allowed Values: Color (pref. #161616)"
+    "\A \2022  --BackgroundImg \2192  Allowed Values: Color (pref. #161616)"
     "\A \2022  --ColBackground1 \2192  Allowed Values: Color (pref. #161616)"
     "\A \2022  --ColBackground2 \2192  Allowed Values: Color (pref. #212121)"
     "\A \2022  --ColChannelList \2192  Allowed Values: Color (pref. #212121)"
@@ -57,10 +48,20 @@
     "\A \2022  --DisplayLibraryMenu \2192  Allowed Values: block or none (pref. none)"
     "\A \2022  --FilterAccountSecurity \2192  Allowed Values: CSS Filters (pref. blur(4px))"!important;
   /* stylelint-enable */
+  --ColChat: white;
+  --ColFont: white;
+  --ColFontBright: white;
+  --UnreadColor: #FF4343; /* Red */
+  --HoverColor: #70ff48; /* Green */
+  --MainColor: #3a7bff; /* Dark Blue */
+  --SelectedColor: #16F3EE; /* Light Blue */
+  --ColFontPlaceholder: green;
   --text-link: var(--ColLink);
 
   --ColAccent: #429ef5; /* Color */
   --ColAccentAlpha: rgba(0, 0, 0, .3); /* Color with Alpha */
+  --BackgroundImg: url('https://i.imgur.com/k6hST83.png'); /* Color or url('link to image') */
+  --HomeIconImg: url("https://i.imgur.com/6PkGYYE.png"); /* Color or url('link to image') */
   --ColBackground1: rgba(0, 0, 0, .3); /* Color */
   --ColBackground2: rgba(0, 0, 0, .5); /* Color */
   --ColChannelList: rgba(0, 0, 0, .4); /* Color */
@@ -112,313 +113,4 @@
   --selected-bg: rgba(112, 135, 215, 0.1) !important;
   --hovered-bg: rgba(79,84,92,0.25) !important;
   --bg-rounding: 0px 10px 10px 0px !important;
-}
-
-/*M Makes Bot Tag Round*/
-.botTag-2WPJ74 {
-    border-radius: 20px !important;
-}
-
-/*Gets rid of Nitro buttons*/
-.buttons-3JBrkn [aria-label="Send a gift"] {
-  display: none;
-}
-#private-channels-1 {
-  display: none;
-}
-
-/*Custom Home Button*/
-.listItem-2P_4kh:nth-child(1) .listItemWrapper-3X98Pc .wrapper-25eVIn svg foreignObject .wrapper-1BJsBx .childWrapper-anI2G9 .homeIcon-tEMBK1 {
-  background: var(--HomeIconImg); /* image url */
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-  width: 50px;
-  height: 50px;
-  margin-top: 0px;
-}
-.homeIcon-tEMBK1 path {
-  fill: transparent;
-}
-.header-3ZP1MY {
-  color: var(white);
-}
-
-/* Mini Member list */
-/*
-.membersWrap-2h-GB4 {
-   min-width: unset;
-   width: 50px;
-   justify-content: right;
-}
-.members-1998pB {
-   transition: transform var(--hover-animation-speed);
-}
-.membersWrap-2h-GB4:hover .members-1998pB {
-   transform: translateX(-190px);
-}
-.membersWrap-2h-GB4 .membersGroup-v9BXpm::after {
-   content: '';
-   width: 30px;
-   height: 2px;
-   border-radius: 50px;
-   background: unset;
-   background-color: var(--seperator-color);
-   position: absolute;
-   left: -36px;
-   top: 29px;
-   margin-left: 0px;
-}
-.membersWrap-2h-GB4 .members-1998pB .member-3-YXUe {
-   background-color: unset;
-   margin-left: 0px;
-   transition: margin-left var(--hover-animation-speed);
-}
-.membersWrap-2h-GB4:hover .members-1998pB .member-3-YXUe {
-   margin-left: 8px;
-}
-.membersWrap-2h-GB4:hover .membersGroup-v9BXpm {
-   transform: translateX(-6px);
-}
-.membersWrap-2h-GB4 .membersGroup-v9BXpm {
-   cursor: default;
-   transform: translateX(45px);
-   transition: transform var(--hover-animation-speed);
-   overflow: visible;
-}
-*/
-
-/* Better roles */
-.role-2irmRk {
-  position: relative;
-  overflow: hidden;
-  z-index: 1;
-  border: none;
-  padding: 5px;
-}
-.roleCircle-3xAZ1j::before {
-  content: '';
-  position: absolute;
-  top:0;
-  left:0;
-  width:100%;
-  height: 100%;
-  background: inherit;
-  opacity: .2;
-  z-index: -1;
-  pointer-events: none;
-}
-.footer-1fjuF6 {
-  border-top: none;
-}
-
-/* Bot tag Color */
-.botTagRegular-2HEhHi {
-    transition: .5s;
-    background: rgba(114,137,218,0.1);
-    color: #7289da;
-}
-.botTagRegular-2HEhHi:hover {
-    transition: .5s;
-    background: #7289da;
-    color: #fff;
-}
-
-/* sum'n with Links */
-#EmbedLinks {
-    background-color: rgb(67, 181, 129);
-    border-radius: 20px;
-    padding: 0px 5px 0px 5px;
-    font-size: 15px;
-    color: white !important;
-}
-
-/* EMOJI */
-.emojiUploader-1f0pVx,
-div[class*="flex-1xMQg5 flex-1O1GKY horizontal-1ae9ci horizontal-2EEEnY flex-1O1GKY directionRow-3v3tfG justifyStart-2NDFzi alignStretch-DpGPf3 noWrap-3jynv6 marginBottom4-2qk4Hy"] {
-    display: none
-}
-.emojiRow-zIc7ZX {
-    display: inline-flex;
-    margin-right: 50px
-}
-
-.wordmark-2iDDfm > svg{
-  width: 0px;
-}
-
-/*Yellow Permission Ticks*/
-.passthroughSelected-1Eq0Kl {
-  background-color: #ffba00 !important;
-}
-.passthrough-1c2ewQ:not(.passthroughSelected-1Eq0Kl) img {
-  content: url("https://cdn.discordapp.com/attachments/729456400077422623/748313547800313906/yellow.svg");
-}
-
-/*Rainbow AudioViz*/
-@keyframes rainbow-audioviz-color {
-  0%,
-  100% {background-color: #6666ff}
-  25%  {background-color: #0099ff}
-  50%  {background-color: #00ff00}
-  75%  {background-color: #ff3399}
-}
-
-.vp-audioviz-bar {
-  animation: rainbow-audioviz-color 10s ease-in-out infinite !important;
-}
-
-.iconWrapper-2OrFZ1::after {
-    content:'';
-    position:absolute;
-    background:#fff;
-    width:100%;
-    height:100%;
-    top:0;
-    left:0;
-    border-radius:inherit;
-    opacity:0;
-    pointer-events:none;
-    transform:scale(0);
-    transition: opacity 50ms linear;
-    border-radius:50px;
-}
-
-.iconWrapper-2OrFZ1:active::after {
-    transform:scale(1.4);
-    opacity:.24;
-    transition: opacity 50ms linear, transform 150ms ease;
-}
-.spoilerText-3p6IlD.hidden-HHr2R9:hover .inlineContent-3ZjPuv {
-        opacity: 1;
-        border-radius: 3px;
-        background-color: #4a4d53;
-}
-
-/* Center server name */
-.name-3YKhmS{ text-align: center; }
-
-/* Rainbow Spotify Time */
-@keyframes rainbow {
-    0% {
-        background-position: 0% 82%
-    }
-    50% {
-        background-position: 100% 19%
-    }
-    100% {
-        background-position: 0% 82%
-    }
-}
-.powercord-spotify .spotify-seek-bar-progress {
-    height: 100%;
-    width: 100%;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    position: absolute;
-    background: linear-gradient(124deg, #ff2400, #e81d1d, #e8b71d, #e3e81d, #1de840, #1ddde8, #2b1de8, #dd00f3, #dd00f3);
-    background-size: 1800% 1800%;
-    -webkit-animation: rainbow 18s ease infinite;
-    -z-animation: rainbow 18s ease infinite;
-    -o-animation: rainbow 18s ease infinite;
-    animation: rainbow 18s ease infinite;
-}
-
-/* Fly in Voice Chat buttons */
-.container-3baos1 .noWrap-3jynv6 {
-    width: 0px;
-    opacity: 0;
-    pointer-events: none;
-    transition: all .5s ease-in-out;
-}
-.container-3baos1:hover .noWrap-3jynv6 {
-    width: 100px;
-    opacity: 1;
-    pointer-events: all;
-}
-
-/* Center profile tabs */
-.tabBar-2MuP6-{ justify-content: center; }
-.top-28JiJ-:last-child .item-PXvHYJ:last-child { margin-right: 0; }
-
-/* Make autocomplete scrollable */
-.autocomplete-1vrmpx {
-  max-height: calc(100vh - 120px);
-  overflow-y: scroll;
-}
-.autocomplete-1vrmpx::-webkit-scrollbar-thumb {
-  background-clip: padding-box;
-  border: 2px solid transparent;
-  border-radius: 4px;
-  background-color: var(--scrollbar-thin-thumb);
-  min-height: 40px;
-}
-.autocomplete-1vrmpx::-webkit-scrollbar {
-  width: 8px;
-  height: 8px;
-}
-
-@keyframes rainbow-server-settings-button {
-  from {color: #6666ff}
-  25%  {color: #0099ff}
-  50%  {color: #00ff00}
-  75%  {color: #ff3399}
-  100% {color: #6666ff}
-}
-.button-1w5pas {
-  animation: rainbow-server-settings-button 10s ease-in-out infinite;
-}
-
-/* Rainbow User Menu Icons */
-@keyframes pride {
-        100%,0%{
-            color: rgb(255,0,0);
-        }
-        8%{
-            color: rgb(255,127,0);
-        }
-        16%{
-            color: rgb(255,255,0);
-        }
-        25%{
-            color: rgb(127,255,0);
-        }
-        33%{
-            color: rgb(0,255,0);
-        }
-        41%{
-            color: rgb(0,255,127);
-        }
-        50%{
-            color: rgb(0,255,255);
-        }
-        58%{
-            color: rgb(0,127,255);
-        }
-        66%{
-            color: rgb(0,0,255);
-        }
-        75%{
-            color: rgb(127,0,255);
-        }
-        83%{
-            color: rgb(255,0,255);
-        }
-        91%{
-            color: rgb(255,0,127);
-        }
-}
-.button-14-BFJ{
-  transition: 0.2s;
-}
-.button-14-BFJ:hover{
-  padding-bottom: 5px;
-  transition: 0.2;
-  animation-name: pride;
-  animation-duration: 2s;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
-  animation-timing-function: linear;
 }
